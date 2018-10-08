@@ -48,7 +48,8 @@ class Backend extends Controller
     /**
      * 快速搜索时执行查找的字段
      */
-    protected $searchFields = 'id';
+    //protected $searchFields = 'id';
+    protected $searchFields = 'student_id,student_name';
 
     /**
      * 是否是关联查询
@@ -76,7 +77,7 @@ class Backend extends Controller
     /**
      * 是否开启Validate验证
      */
-    protected $modelValidate = false;
+    protected $modelValidate = true;
 
     /**
      * 是否开启模型场景验证
